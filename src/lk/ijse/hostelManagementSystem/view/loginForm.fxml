@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="830.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelManagementSystem.Controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="491.0" fitWidth="440.0" layoutX="452.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-2.0" opacity="0.92" prefHeight="830.0" prefWidth="674.0" style="-fx-background-color: lightblue; -fx-border-color: BLACK; -fx-border-width: 5;">
+         <children>
+            <Text layoutX="284.0" layoutY="235.0" stroke="#f8f8f8" strokeType="OUTSIDE" strokeWidth="2.0" text="Sign in">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtEmail" focusColor="#030303" labelFloat="true" layoutX="189.0" layoutY="279.0" prefHeight="44.0" prefWidth="297.0" promptText="  Email" style="-fx-background-radius: 10; -fx-background-color: white; -fx-border-color: black; -fx-border-radius: 10; -fx-font-style: white;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword" focusColor="#101111" labelFloat="true" layoutX="189.0" layoutY="362.0" prefHeight="44.0" prefWidth="297.0" promptText=" Password" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnSignIn" layoutX="228.0" layoutY="427.0" onAction="#btnSignOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #003973; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 3;" text="Sign in" textFill="#eeecec">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <Text layoutX="178.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't Have an Account?" />
+            <JFXButton fx:id="btnCreateAcc" layoutX="356.0" layoutY="480.0" onAction="#btnCreateAccOnAction" text="Create Account..">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnForgotPassword" layoutX="260.0" layoutY="518.0" onAction="#btnForgotPasswordOnAction" text="Forgot Password?">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Text fill="#f2eeee" layoutX="964.0" layoutY="402.0" stroke="#0d0d0d" strokeType="OUTSIDE" strokeWidth="2.0" text="D24 Hostel" wrappingWidth="254.689453125">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Text>
+      <Pane layoutX="672.0" prefHeight="63.0" prefWidth="630.0" style="-fx-background-color: #00a8ff;" />
+      <Pane layoutX="672.0" layoutY="767.0" prefHeight="63.0" prefWidth="630.0" style="-fx-background-color: #00a8ff;">
+         <children>
+            <Text layoutX="500.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..SG PROJECTS..">
+               <font>
+                  <Font name="Cambria Bold" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
