@@ -42,7 +42,7 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </JFXPasswordField>
-            <JFXButton fx:id="btnSignIn" layoutX="228.0" layoutY="427.0" onAction="#btnSignOnAction" prefHeight="45.0" prefWidth="220.0" style="-fx-background-color: #003973; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 3;" text="Sign in" textFill="#eeecec">
+            <JFXButton fx:id="btnSignIn" layoutX="228.0" layoutY="427.0" onAction="#btnSignOnAction" prefHeight="55.0" prefWidth="220.0" style="-fx-background-color: #003973; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: white; -fx-border-width: 3;" text="Sign in" textFill="#eeecec">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -52,17 +52,6 @@
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
-            </JFXButton>
-            <Text layoutX="178.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't Have an Account?" />
-            <JFXButton fx:id="btnCreateAcc" layoutX="356.0" layoutY="480.0" onAction="#btnCreateAccOnAction" text="Create Account..">
-               <font>
-                  <Font name="System Bold" size="17.0" />
-               </font>
-            </JFXButton>
-            <JFXButton fx:id="btnForgotPassword" layoutX="260.0" layoutY="518.0" onAction="#btnForgotPasswordOnAction" text="Forgot Password?">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
             </JFXButton>
          </children>
       </Pane>

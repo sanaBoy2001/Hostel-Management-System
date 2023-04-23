@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Navigation {
+
     public static AnchorPane pane;
     public static void navigate(Routes routes , AnchorPane pane) throws IOException {
 
@@ -33,8 +34,8 @@ public class Navigation {
                 break;
 
             case REGISTER:
-                window.setTitle("Register user");
-                initUI("RegisterUserForm.fxml");
+                window.setTitle("Regester user");
+                initUI("RegesterUserForm.fxml");
                 break;
 
             case FORGETPASSWORD:
@@ -48,7 +49,7 @@ public class Navigation {
                 break;
 
             default:
-                new Alert(Alert.AlertType.ERROR,"Not Suitable UI Found").show();
+                new Alert(Alert.AlertType.ERROR,"Not Sutibale UI Found").show();
         }
     }
 

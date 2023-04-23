@@ -1,14 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.hostelManagementSystem.Controller.DashboardFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="pane" prefHeight="830.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelManagementSystem.Controller.DashboardFormController">
+   <children>
+      <Pane prefHeight="830.0" prefWidth="357.0" style="-fx-background-color: #00a8ff; -fx-border-color: black; -fx-border-width: 3;">
+         <children>
+            <Text layoutX="97.0" layoutY="49.0" stroke="#ebeaea" strokeType="OUTSIDE" strokeWidth="2.0" text="D24 Hostel">
+               <font>
+                  <Font name="Candara Bold" size="35.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnDashBoard" layoutX="101.0" layoutY="159.0" onAction="#btnDashBoardOnAction" prefHeight="44.0" prefWidth="156.0" text="Dash Board" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="40.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-dashboard-layout-24.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnManageStudents" layoutX="108.0" layoutY="247.0" onAction="#btnManageStudentsOnAction" text="Manage Students" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="40.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-employees-64.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnManageRooms" layoutX="108.0" layoutY="350.0" onAction="#btnManageRoomsOnAction" text="Manage Rooms" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="40.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-purchase-order-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnReserveRoom" layoutX="105.0" layoutY="451.0" onAction="#btnReserveRoomOnAction" text="Reserve Room" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="37.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/resevetion.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnPayment" layoutX="108.0" layoutY="551.0" onAction="#btnPaymentOnAction" text="Payment" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="40.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-get-cash-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogOut" layoutX="108.0" layoutY="726.0" onAction="#btnLogOutOnAction" text="Log Out" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="40.0" layoutY="726.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="context" layoutX="357.0" prefHeight="830.0" prefWidth="962.0">
+         <children>
+            <ImageView fitHeight="631.0" fitWidth="564.0" layoutX="199.0" layoutY="111.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
 </AnchorPane>

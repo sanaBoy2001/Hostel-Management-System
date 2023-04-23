@@ -1,0 +1,21 @@
+package lk.ijse.hostelManagementSystem.dao.custom.impl;
+
+import lk.ijse.hostelManagementSystem.dao.custom.QueryDAO;
+import lk.ijse.hostelManagementSystem.util.FactoryConfiguration;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import java.util.List;
+
+public class QueryDAOImpl implements QueryDAO {
+
+    @Override
+    public List<Object[]> getPaymentStutas() {
+        Session session = FactoryConfiguration.getInstance().getSession();
+        Transaction transaction = session.beginTransaction();
+        List<Object[]> list =session.createQuery("SELECT res.resId,s.studentId,s.name, r.roomTpeId, r.type, res.status FROM Reservation res JOIN Student s ON res.student=s.studentId JOIN Room r ON res.room=r.roomTpeId WHERE res.status='Pending'").list();
+        transaction.commit();
+        session.close();
+        return list;
+    }
+}
